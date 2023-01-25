@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{7a61f8fe-27d5-487b-82c8-39b85d7198cd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="csalmpub_name" select="1" icon="1" preview="1">
+        <row name="result" id="csalmpub_csapproversid">
+          <cell name="csalmpub_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="csalmpub_csapprovers">
+          <attribute name="csalmpub_csapproversid" />
+          <attribute name="csalmpub_name" />
+          <attribute name="createdon" />
+          <order attribute="csalmpub_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive CSApprovers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

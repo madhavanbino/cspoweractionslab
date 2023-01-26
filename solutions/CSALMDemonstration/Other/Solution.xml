@@ -78,14 +78,21 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="csalmpub_approvers" behavior="0" />
       <RootComponent type="1" schemaName="csalmpub_csapprovers" behavior="0" />
       <RootComponent type="1" schemaName="csalmpub_cstimeoffrequest" behavior="0" />
+      <RootComponent type="62" schemaName="csalmpub_Approvers" behavior="0" />
       <RootComponent type="62" schemaName="csalmpub_TimeoffApprovals" behavior="0" />
       <RootComponent type="62" schemaName="csalmpub_TimeOffRequests" behavior="0" />
+      <RootComponent type="80" schemaName="csalmpub_Approvers" behavior="0" />
       <RootComponent type="80" schemaName="csalmpub_TimeoffApprovals" behavior="0" />
       <RootComponent type="80" schemaName="csalmpub_TimeOffRequests" behavior="0" />
     </RootComponents>
     <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="csalmpub_Approvers" displayName="Approvers" />
+      </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="csalmpub_TimeoffApprovals" displayName="TimeoffApprovals" />
